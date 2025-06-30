@@ -15,7 +15,7 @@ const ContactMe = () => {
         </h2>
         <div className="absolute top-4 left-3  opacity-60 w-full h-[30px] bg-orange-100 rounded-md shadow-md z-0"></div>
       </div>
-      <div className="flex flex-col lg:flex-row items-center px-6 sm:px-10 md:px-20 lg:px-28 py-16 gap-10 bg-white text-black">
+      <div className="flex flex-col lg:flex-row items-center px-6 sm:px-10 md:px-20 lg:px-28  gap-10  text-black">
         {/* Left: Contact Info */}
 
         <div data-aos="fade-right" className="w-full lg:w-1/2">
@@ -50,11 +50,11 @@ const ContactMe = () => {
             required
             type="email"
             placeholder="Your Email"
-            className="input input-bordered w-full bg-white border border-orange-200"
+            className="input input-bordered w-full  border border-orange-200"
           />
           <textarea
             placeholder="Your Message"
-            className="textarea textarea-bordered w-full h-40 bg-white border border-orange-200"
+            className="textarea textarea-bordered w-full h-40  border border-orange-200"
           ></textarea>
           <button className="btn bg-orange-400 text-white hover:bg-orange-500 w-full">
             Send Message

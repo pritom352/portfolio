@@ -7,7 +7,7 @@ const Hero = () => {
   return (
     <section
       id="home"
-      className="md:min-h-screen bg-white flex flex-col-reverse lg:flex-row items-center justify-between  mx-auto  py-16  "
+      className="md:min-h-screen  flex flex-col-reverse lg:flex-row items-center justify-between  mx-auto  py-16  "
     >
       {/* Left: Text Content */}
       <div
@@ -27,7 +27,7 @@ const Hero = () => {
         </h2>
         <p className="max-w-md text-gray-500">
           I build modern, responsive, and interactive user interfaces using
-          React and Tailwind CSS.
+          React.
         </p>
         <div className="flex justify-center lg:justify-start gap-4 mt-4">
           <a

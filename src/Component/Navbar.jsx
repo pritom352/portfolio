@@ -8,7 +8,7 @@ const Navbar = () => {
     <div className=" bg-base-100   shadow-md sticky top-0 z-50">
       <div className="navbar max-w-5/6 mx-auto">
         <div className="navbar-start">
-          <img src={logo} className=" max-w-[150px] border" alt="" />
+          <img src={logo} className=" max-w-[150px] " alt="" />
         </div>
 
         <div className="navbar-center hidden lg:flex">
@@ -43,11 +43,7 @@ const Navbar = () => {
         </div>
 
         <div className="navbar-end space-x-3">
-          <a
-            href="/resume.pdf"
-            download
-            className="btn btn-sm btn-primary normal-case"
-          >
+          <a href="" className="btn btn-sm btn-primary normal-case">
             Download Resume
           </a>
 

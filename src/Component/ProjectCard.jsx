@@ -15,6 +15,7 @@ const projects = [
       "Protected routes using JWT and role-based access",
       "Bidding system for freelancers to apply on posted tasks",
     ],
+    Improvements: ["add payment system", "add jwt authentication"],
     tech: ["React", "Node.js", "MongoDB", "Tailwind", "Express.js", "Firebase"],
     images: [
       "/tasklinker-1.png",
@@ -22,6 +23,7 @@ const projects = [
       "/tasklinker-3.png",
       "/tasklinker-4.png",
     ],
+    Challenges: ["make this type dahsbord", "show task base on categories"],
     live: "https://assignment10-22f98.web.app/",
     githubClient: "https://github.com/pritom352/Tasklinker",
     githubServer: "https://github.com/pritom352/Tasklinker-server",
@@ -64,6 +66,15 @@ const projects = [
       "User dashboard to manage created marathons and applications",
       "Server-side search, and responsive UI",
     ],
+    Challenges: [
+      "use JWT authentication ",
+      "to handle marathon update and delete",
+    ],
+    Improvements: [
+      "Admin Dashboard with Role Management",
+      "Payment Integration",
+      "Interactive Map Integration",
+    ],
     tech: [
       "React",
       "Tailwind CSS",
@@ -83,8 +94,7 @@ const projects = [
     ],
     live: "https://assignment-11-f435a.web.app/",
     githubClient: "https://github.com/pritom352/-Marathon-Management-System",
-    githubServer:
-      "https://github.com/pritom352/-Marathon-Management-System-server",
+    githubServer: "https://github.com/pritom352/Marathon-server",
     animated: true,
   },
 ];
@@ -93,7 +103,7 @@ const ProjectCard = ({ project, onOpen }) => (
   <div
     id="projects"
     data-aos="fade-up"
-    className="bg-white shadow-md rounded-xl p-5 w-full flex flex-col lg:flex-row gap-6 mb-8"
+    className=" shadow-md rounded-xl p-5 w-full flex flex-col lg:flex-row gap-6 mb-8"
   >
     {/* Image Section */}
     <div className="w-full lg:w-1/2 overflow-hidden rounded-lg h-[260px] relative">
@@ -199,7 +209,7 @@ const ProjectsSection = () => {
           className="modal modal-bottom sm:modal-middle"
           onClick={() => setSelected(null)}
         >
-          <div className="modal-box bg-white text-black">
+          <div className="modal-box  text-black">
             <h3 className="font-bold text-lg mb-3">
               {selected.name} – Details
             </h3>
@@ -212,17 +222,17 @@ const ProjectsSection = () => {
               Challenges:
             </p>
             <ul className="list-disc ml-5 text-sm text-gray-500">
-              <li>Managing component structure</li>
-              <li>Ensuring mobile responsiveness</li>
-              <li>Integrating secure backend APIs</li>
+              {selected?.Challenges?.map((challenge, ind) => (
+                <li key={ind}>{challenge}</li>
+              ))}
             </ul>
             <p className="mt-3 font-semibold text-sm text-gray-700">
               Future Improvements:
             </p>
             <ul className="list-disc ml-5 text-sm text-gray-500">
-              <li>Dark mode toggle</li>
-              <li>Admin dashboard</li>
-              <li>Payment integration</li>
+              {selected.Improvements.map((improvement, idx) => (
+                <li key={idx}>{improvement}</li>
+              ))}
             </ul>
             <div className="modal-action">
               <button className="btn btn-sm" onClick={() => setSelected(null)}>

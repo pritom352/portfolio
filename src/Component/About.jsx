@@ -3,7 +3,7 @@ const About = () => {
   return (
     <section
       id="about"
-      className="py-10  bg-white text-base-content mt-10 md:mt-15 lg:mt-20 px-6 md:px-16 lg:px-24 shadow-2xs"
+      className="py-10   text-base-content mt-10 md:mt-15 lg:mt-20 px-6 md:px-16 lg:px-24 "
     >
       {/* Header */}
       <div

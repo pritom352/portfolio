@@ -5,7 +5,7 @@ const Education = () => {
     <div>
       <section
         id="education"
-        className="py-10 px-10 md:px-20 lg:px-35 bg-white  shadow-2xl mt-10 md:mt-15 lg:mt-20"
+        className="py-10 px-10 md:px-20 lg:px-35    mt-10 md:mt-15 lg:mt-20"
       >
         <div
           data-aos="fade-down"
@@ -21,7 +21,7 @@ const Education = () => {
         <div
           data-aos="zoom-in"
           data-aos-delay="300"
-          className="max-w-3xl shadow-2xl mx-auto bg-white p-6 rounded-lg  space-y-4 text-left"
+          className="max-w-3xl shadow-2xs mx-auto  p-6 rounded-lg  space-y-4 text-left"
         >
           <div className="space-y-1">
             <h3 className="text-xl font-semibold text-primary">

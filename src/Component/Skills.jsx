@@ -41,7 +41,7 @@ const SkillCardSection = () => {
   return (
     <section
       id="skills"
-      className="py-10 px-10 md:px-20 lg:px-35   bg-white text-black mt-10 md:mt-15 lg:mt-20"
+      className="py-10 px-10 md:px-20 lg:px-35    text-black mt-10 md:mt-15 lg:mt-20"
     >
       <div
         data-aos="fade-up-right"
@@ -54,13 +54,16 @@ const SkillCardSection = () => {
         <div className="absolute top-4 left-3  opacity-60 w-full h-[30px] bg-orange-100 rounded-md shadow-md z-0"></div>
       </div>
 
-      <div className="max-w-6xl mx-auto grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4 md:gap-6">
+      <div
+        id="skill"
+        className="max-w-6xl mx-auto grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4 md:gap-6"
+      >
         {skills.map((skill, index) => (
           <div
             data-aos="fade-down"
             data-aos-delay={`${100 * index}`}
             key={index}
-            className="bg-white rounded-xl p-5 flex flex-col items-center justify-center shadow-md hover:shadow-xl transform transition duration-300 hover:-translate-y-2 hover:scale-105 hover:rotate-[-4deg]"
+            className=" rounded-xl p-5 flex flex-col items-center justify-center shadow-md hover:shadow-xl transform transition duration-300 hover:-translate-y-2 hover:scale-105 hover:rotate-[-4deg]"
           >
             {skill.icon}
             <p className="mt-3 font-medium text-sm sm:text-base text-center">

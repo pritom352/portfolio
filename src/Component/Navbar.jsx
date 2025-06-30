@@ -1,36 +1,48 @@
 // components/Navbar.jsx
 import { FaGithub, FaLinkedin } from "react-icons/fa";
+import { Link } from "react-scroll";
+import logo from "../assets/logo.png";
 
 const Navbar = () => {
   return (
-    <div className=" bg-base-100  shadow-md sticky top-0 z-50">
+    <div className=" bg-base-100   shadow-md sticky top-0 z-50">
       <div className="navbar max-w-5/6 mx-auto">
         <div className="navbar-start">
-          <a className="text-xl font-bold tracking-wide">Pritom Proshad</a>
+          <img src={logo} className=" max-w-[150px] border" alt="" />
         </div>
 
         <div className="navbar-center hidden lg:flex">
           <ul className="menu menu-horizontal px-1 font-medium">
             <li>
-              <a href="#home">Home</a>
+              <Link to="home" smooth={true} duration={400}>
+                Home
+              </Link>
             </li>
             <li>
-              <a href="#about">About</a>
+              <Link to="about" smooth={true} duration={400} offset={-70}>
+                About
+              </Link>
+            </li>
+
+            <li>
+              <Link to="skills" smooth={true} duration={400} offset={-70}>
+                Skills
+              </Link>
             </li>
             <li>
-              <a href="#skills">Skills</a>
+              <Link to="projects" smooth={true} duration={400} offset={-285}>
+                Projects
+              </Link>
             </li>
             <li>
-              <a href="#projects">Projects</a>
-            </li>
-            <li>
-              <a href="#contact">Contact</a>
+              <Link to="contact" smooth={true} duration={400}>
+                Contact
+              </Link>
             </li>
           </ul>
         </div>
 
         <div className="navbar-end space-x-3">
-          {/* Resume Button */}
           <a
             href="/resume.pdf"
             download

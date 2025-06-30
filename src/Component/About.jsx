@@ -3,13 +3,13 @@ const About = () => {
   return (
     <section
       id="about"
-      className="py-16 bg-white text-base-content px-6 md:px-16 lg:px-24"
+      className="py-10  bg-white text-base-content mt-10 md:mt-15 lg:mt-20 px-6 md:px-16 lg:px-24 shadow-2xs"
     >
       {/* Header */}
       <div
         data-aos="fade-up-right"
         data-aos-delay="300"
-        className="relative inline-block mb-10"
+        className="relative inline-block mb-6 md:mb-10 "
       >
         <h2 className="text-3xl relative font-bold text-orange-400 text-shadow-2xs z-10">
           About Me <span className="ml-1">💻</span>

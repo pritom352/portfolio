@@ -41,15 +41,14 @@ const SkillCardSection = () => {
   return (
     <section
       id="skills"
-      className="py-16 px-10 md:px-20 lg:px-35  bg-white text-black"
+      className="py-10 px-10 md:px-20 lg:px-35   bg-white text-black mt-10 md:mt-15 lg:mt-20"
     >
-      {/* <h2 className="text-3xl font-bold mb-10 text-center">🧰 My Skills</h2> */}
       <div
         data-aos="fade-up-right"
         data-aos-delay="300"
         className=" relative  inline-block"
       >
-        <h2 className="text-3xl relative font-bold mb-10 text-orange-400 text-shadow-2xs  z-10">
+        <h2 className="text-3xl relative font-bold mb-6 md:mb-10 text-orange-400 text-shadow-2xs  z-10">
           My Skills <span className="ml-1 z-10">🧰</span>
         </h2>
         <div className="absolute top-4 left-3  opacity-60 w-full h-[30px] bg-orange-100 rounded-md shadow-md z-0"></div>

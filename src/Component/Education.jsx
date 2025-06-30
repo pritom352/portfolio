@@ -5,15 +5,12 @@ const Education = () => {
     <div>
       <section
         id="education"
-        className="py-16 px-10 md:px-20 lg:px-35 bg-white border border-black shadow-2xl"
+        className="py-10 px-10 md:px-20 lg:px-35 bg-white  shadow-2xl mt-10 md:mt-15 lg:mt-20"
       >
-        {/* <h2 className="text-3xl font-bold mb-8 text-center">
-          <span className="mr-2">🎓</span> Educational Qualification
-        </h2> */}
         <div
           data-aos="fade-down"
           data-aos-delay="300"
-          className=" relative  left-1/2 transform -translate-x-1/2  inline-block"
+          className=" relative  left-1/2 transform  -translate-x-1/2  inline-block"
         >
           <h2 className=" text-2xl lg:text-3xl relative font-bold mb-8 text-orange-400 text-shadow-2xs  z-10">
             Educational Qualification <span className="md:ml-1 z-10">🎓</span>

@@ -4,11 +4,11 @@ import { TfiEmail } from "react-icons/tfi";
 
 const ContactMe = () => {
   return (
-    <div>
+    <div id="contact" className=" mt-10 md:mt-15 lg:mt-20 py-10 px-6">
       <div
         data-aos="fade-up-right"
         data-aos-delay="300"
-        className=" relative  inline-block"
+        className=" relative   inline-block"
       >
         <h2 className="text-3xl relative font-bold mb-10 text-orange-400 text-shadow-2xs  z-10">
           Contact <span className="ml-1 z-10">🚀</span>

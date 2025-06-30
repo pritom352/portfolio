@@ -91,8 +91,8 @@ const projects = [
 
 const ProjectCard = ({ project, onOpen }) => (
   <div
+    id="projects"
     data-aos="fade-up"
-    // data-aos-anchor-placement="bottom-center"
     className="bg-white shadow-md rounded-xl p-5 w-full flex flex-col lg:flex-row gap-6 mb-8"
   >
     {/* Image Section */}
@@ -177,14 +177,13 @@ const ProjectsSection = () => {
   const [selected, setSelected] = useState(null);
 
   return (
-    <section className="py-16 px-6 bg-base-100 text-base-content">
-      {/* <h2 className="text-3xl font-bold mb-10 text-center"> </h2> */}
+    <section className="py-10  px-6  bg-base-100 text-base-content mt-10 md:mt-15 lg:mt-20">
       <div
         data-aos="fade-up-right"
         data-aos-delay="300"
         className=" relative  inline-block"
       >
-        <h2 className="text-3xl relative font-bold mb-10 text-orange-400 text-shadow-2xs  z-10">
+        <h2 className="text-3xl relative font-bold mb-6 lg:mb-10 text-orange-400 text-shadow-2xs  z-10">
           Projects <span className="ml-1 z-10">🚀</span>
         </h2>
         <div className="absolute top-4 left-3  opacity-60 w-full h-[30px] bg-orange-100 rounded-md shadow-md z-0"></div>

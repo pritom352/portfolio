@@ -7,8 +7,7 @@ const Hero = () => {
   return (
     <section
       id="home"
-      // className="min-h-screen bg-white flex flex-col-reverse lg:flex-row items-center justify-between px-10 md:px-20 lg:px-35 border border-black py-16 "
-      className="md:min-h-screen bg-white flex flex-col-reverse lg:flex-row items-center justify-between  mx-auto border border-black py-16  "
+      className="md:min-h-screen bg-white flex flex-col-reverse lg:flex-row items-center justify-between  mx-auto  py-16  "
     >
       {/* Left: Text Content */}
       <div
@@ -59,22 +58,6 @@ const Hero = () => {
       </div>
       {/* 👇 Social Icons Section */}
 
-      {/* Right: Image in Orange Circle */}
-      {/* <motion.div
-        animate={{ y: [0, 50, 0, -50, 0] }}
-        transition={{ duration: 2, repeat: Infinity, ease: "easeInOut" }}
-        data-aos="fade-down"
-        data-aos-delay="300"
-        className="relative w-60 h-60 lg:w-90 lg:h-90 mb-10 lg:mb-0"
-      >
-        <div className="w-full h-full bg-orange-400 rounded-full"></div>
-
-        <img
-          src={myImg}
-          alt="Pritom Proshad"
-          className="absolute top-1 left-1/2 transform -translate-x-1/2 w-58 h-58 lg:w-88 lg:h-88 rounded-full object-cover border-4 border-white shadow-lg"
-        />
-      </motion.div> */}
       <motion.div
         animate={{ y: [-20, 20] }}
         transition={{

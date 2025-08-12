@@ -1,7 +1,8 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { FaExternalLinkAlt, FaGithub } from "react-icons/fa";
 import { IoMdInformationCircleOutline } from "react-icons/io";
 import { animate, motion } from "framer-motion";
+import Aos from "aos";
 
 const projects = [
   {
@@ -134,7 +135,7 @@ const ProjectCard = ({ project, onOpen }) => (
     {/* Text Section */}
     <div className="flex-1 space-y-3">
       <h3 className="text-2xl font-bold text-primary">{project.name}</h3>
-      <p className="text-gray-600 text-sm">{project.description}</p>
+      <p className="text-gray-500 text-sm">{project.description}</p>
       <ul className="list-disc ml-5 text-sm text-gray-500">
         {project.features.map((f, idx) => (
           <li key={idx}>{f}</li>
@@ -185,9 +186,11 @@ const ProjectCard = ({ project, onOpen }) => (
 
 const ProjectsSection = () => {
   const [selected, setSelected] = useState(null);
-
+  useEffect(() => {
+    Aos.init({ once: true });
+  }, []);
   return (
-    <section className="py-10  px-6  bg-base-100 text-base-content mt-10 md:mt-15 lg:mt-20">
+    <section className="py-10     bg-base-100 text-base-content mt-10 md:mt-15 lg:mt-20">
       <div
         data-aos="fade-up-right"
         data-aos-delay="300"
@@ -209,16 +212,16 @@ const ProjectsSection = () => {
           className="modal modal-bottom sm:modal-middle"
           onClick={() => setSelected(null)}
         >
-          <div className="modal-box  text-black">
+          <div className="modal-box  ">
             <h3 className="font-bold text-lg mb-3">
               {selected.name} – Details
             </h3>
-            <p className="text-sm text-gray-600 mb-2">
+            <p className="text-sm text-gray-500 mb-2">
               <span className="font-semibold">Tech Stack:</span>{" "}
               {selected.tech.join(", ")}
             </p>
             <p className="text-sm text-gray-500 mb-3">{selected.description}</p>
-            <p className="text-sm text-gray-700 mb-2 font-semibold">
+            <p className="text-sm text-gray-500 mb-2 font-semibold">
               Challenges:
             </p>
             <ul className="list-disc ml-5 text-sm text-gray-500">
@@ -226,7 +229,7 @@ const ProjectsSection = () => {
                 <li key={ind}>{challenge}</li>
               ))}
             </ul>
-            <p className="mt-3 font-semibold text-sm text-gray-700">
+            <p className="mt-3 font-semibold text-sm text-gray-500">
               Future Improvements:
             </p>
             <ul className="list-disc ml-5 text-sm text-gray-500">

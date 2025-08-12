@@ -3,10 +3,7 @@ import React from "react";
 const Education = () => {
   return (
     <div>
-      <section
-        id="education"
-        className="py-10 px-10 md:px-20 lg:px-35    mt-10 md:mt-15 lg:mt-20"
-      >
+      <section id="education" className="py-10      mt-10 md:mt-15 lg:mt-20">
         <div
           data-aos="fade-down"
           data-aos-delay="300"

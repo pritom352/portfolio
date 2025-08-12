@@ -9,3 +9,18 @@ html {
 #skill {
   font-family: "Nanum Pen Script", cursive;
 }
+@plugin "daisyui/theme" {
+  name: "light";
+  default: true;
+  --color-primary: #0ec4f0;
+  --color-secondary: #a7d6d1;
+  --color-accent: #e1f4f3;
+}
+@plugin "daisyui/theme" {
+  name: "dark";
+  default: true;
+  --color-primary: #0ec4f0;
+  /* --color-primary: #454948; */
+  --color-secondary: #6c8ea4;
+  --color-accent: #303d3c;
+}

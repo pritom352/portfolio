@@ -1,9 +1,15 @@
 import { FaFacebookF, FaGithub, FaLinkedinIn, FaTwitter } from "react-icons/fa";
 import myImg from "../assets/IMG_0117.jpg";
 import { motion } from "framer-motion";
+import Aos from "aos";
+import { useEffect } from "react";
+import { TypeAnimation } from "react-type-animation";
 
 // components/Hero.jsx
 const Hero = () => {
+  useEffect(() => {
+    Aos.init({ once: true }); // একবার animate হবে, পরে আর হবে না
+  }, []);
   return (
     <section
       id="home"
@@ -22,8 +28,24 @@ const Hero = () => {
           <div className=" hidden md:block absolute left-4 top-5 opacity-60 w-full h-[40px] bg-orange-100 rounded-md shadow-md z-0"></div>
         </div>
 
-        <h2 className="text-2xl lg:text-3xl font-semibold text-gray-600">
-          Frontend Web Developer
+        <h2
+          className="text-2xl lg:text-3xl font-semibold text-gray-600"
+          style={{
+            color: "#3b82f6", // blue color text
+            textShadow: `
+      0 0 2px rgba(14, 196, 240, 0.7),
+      0 0 5px rgba(14, 196, 240, 0.5),
+      0 0 10px rgba(14, 196, 240, 0.3)
+    `,
+          }}
+        >
+          <TypeAnimation
+            sequence={["Frontend Web Developer", 4000, "", 2000]}
+            speed={300}
+            wrapper="span"
+            repeat={Infinity}
+            style={{ display: "inline-block" }}
+          />
         </h2>
         <p className="max-w-md text-gray-500">
           I build modern, responsive, and interactive user interfaces using
@@ -55,8 +77,14 @@ const Hero = () => {
             <FaTwitter />
           </a>
         </div>
+        <a
+          href=""
+          className="btn block md:hidden btn-sm btn-primary normal-case w-3/5 mx-auto text-center py-2"
+        >
+          Download Resume
+        </a>
       </div>
-      {/* 👇 Social Icons Section */}
+      {/*  Social Icons Section */}
 
       <motion.div
         animate={{ y: [-20, 20] }}
